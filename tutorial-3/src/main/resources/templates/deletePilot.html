@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Update</title>
+	</head>
+	<body>
+		<h1 th:if="${message != null}" th:text="${message}"></h1>
+		<div th:insert="viewall-pilot :: viewall-pilot"></div>
+	</body>
+</html>

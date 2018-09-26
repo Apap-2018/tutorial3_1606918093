@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<htm; xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>View Detail</title>
+	</head>
+	<body th:fragment="view-pilot">
+		<h3 th:text="${pilot.id}">Tidak Ada Data</h3>
+		<h3 th:text="${pilot.licenseNumber}"></h3>
+		<h3 th:text="${pilot.name}"></h3>
+		<h3 th:text="${pilot.flyHour}"></h3>
+	</body>
+</html>

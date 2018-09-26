@@ -1,0 +1,53 @@
+**Membuat Controller dan Fungsi Add**
+4. 	Jalankan program dan buka
+	localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono&flyHour=20
+	Pertanyaan 1​: apakah hasilnya? Jika error, tuliskan penjelasan Anda.
+		=> tidak error, "Data Berhasil Ditambahkan"
+		
+	localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono
+	Pertanyaan 2: ​apakah hasilnya? Jika error, tuliskan penjelasan Anda.
+		=> terjadi error, karena pada RequestParam dinyatakan bahwa parameter
+		"flyHour" bersifat required, sementara pada request url tidak ada value
+		untuk parameter tsb. 
+		
+**Method View by LicenseNumber**
+3.Jalankan program dan buka
+	localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono&flyHour=20
+	localhost:8080/pilot/view?licenseNumber=1234
+	Pertanyaan 3​: apakah data Pilot tersebut muncul? Jika tidak, mengapa?
+		=> Iya, Data Berhasil Disimpan dan ditampilkan :
+		1
+		1234
+		Jono
+		20
+		
+4. Coba matikan program dan jalankan kembali serta buka
+	localhost:8080/pilot/view?licenseNumber=1234
+	Pertanyaan 4​: apakah data Pilot tersebut muncul? Jika tidak, mengapa?
+		=> terjadi error, data pilot dengan licenseNumber 1234 belum ditambahkan. 
+		
+**Method View All**
+3. Jalankan program dan buka
+	localhost:8080/pilot/add?id=1&licenseNumber=1234&name=Jono&flyHour=20
+	localhost:8080/pilot/viewall
+	Pertanyaan 5​: apakah data Pilot tersebut muncul?
+		=> Iya, Data Berhasil Disimpan dan ditampilkan :
+		1
+		1234
+		Jono
+		20
+
+4. Coba tambahkan data Pilot lainnya dengan NPM yang berbeda, lalu buka
+	localhost:8080/pilot/viewall
+	Pertanyaan 6​: Apakah semua data Pilot muncul?
+		=> Iya, data yang ditampilkan :
+		1
+		1234
+		Jono
+		20
+		1
+		1000
+		Jono
+		20
+	
+	
